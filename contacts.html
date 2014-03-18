@@ -8,11 +8,15 @@
 		<link rel="apple-touch-startup-image" href="images/todo-splash.png" />-->
 		<title>Contacts App</title>
 		<link rel="stylesheet" href="contacts.css">
-		<script type="text/javascript" src="../dojox/mobile/deviceTheme.js"></script>
-		<script type="text/javascript" src="../dojo/dojo.js"
-				data-dojo-config="async: true">
+		<script type="text/javascript" src="../requirejs/require.js">
 		</script>
 		<script type="text/javascript">
+			require.config({
+				baseUrl: "..",
+				paths : {
+					"contactsApp": "delite-contacts-app"
+				}
+			});
 			require(["contactsApp/contacts"]);
 		</script>
 	</head>

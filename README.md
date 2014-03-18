@@ -1,49 +1,41 @@
 # contactsApp
 
-This project provides a sample tutorial contact application based on Dojo 1.9 dojox/app module.
+This project provides a sample tutorial contact application based on delite, deliteful & dapp projects.
+
+## Status
+
+No official release yet.
 
 ## Licensing
 
-This project is distributed by the Dojo Foundation and licensed under the Dojo dual license [BSD/AFLv2 license](http://dojotoolkit.org/license).
+This project is distributed by the Dojo Foundation and licensed under the ["New" BSD License](./LICENSE).
 All contributions require a [Dojo Foundation CLA](http://dojofoundation.org/about/claForm).
 
 ## Dependencies
 
 This project requires the following other projects to run:
  * dojo
- * dijit
- * dojox/app
- * dojox/mobile
- * (optional, useful only if you want to build the app) util
- * (optional, useful only to run this in a cordova app) dcordova
+ * delite
+ * deliteful
+ * dapp
+ * requirejs
+ * requirejs-dplugins
+ * dcl    (git clone https://github.com/uhop/dcl.git)
 
 ## Installation
 
-* Manual installation by dropping contactsApp as a sibling of the Dojo dojo directory:
- * contactsApp
- * dojo
- * dijit
- * dojox/app
- * dojox/mobile
- * util (optional)
- * dcordova (optional, [version tag: dojo1.9.0](https://github.com/ibm-dojo/dcordova/releases/tag/dojo1.9.0))
+_Bower_ release installation:
 
- To install the latest master, go to the root Dojo installation directory and clone contactsApp from github
+    $ bower install delite-contacts-app
 
- git clone git://github.com/cjolif/dojo-contacts-app.git contactsApp
+_Manual_ master installation:
 
-## Build
+    $ git clone git://github.com/ibm-js/delite-contacts-app.git
 
-You can build the contacts application by running the following command from util/buildscripts:
+Then install dependencies with bower (or manually from github if you prefer to):
 
-./build.sh --profile ../../contactsApp/build/build.profile.js
-  --appConfigFile ../../contactsApp/contacts.json
-  --appConfigLayer contactsApp/contacts
-
-This will make sure all the files needed by this application are bundled into compressed layers. The result can be
-found in contactsApp-release/contactsApp
-
-## Documentation
+	$ cd delite-contacts-app
+	$ bower install
 
 ## Credits
 
